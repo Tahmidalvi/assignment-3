@@ -1,12 +1,366 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+    <html lang="en" data-theme="light"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>assignment 03
-    </title>
-</head>
-<body>
-    
+    <title>Assignment-three</title>
+    <!-- tailwind and daisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- goggle font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
+    <style>
+        .font-basic{
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+<style>/* ! tailwindcss v3.4.5 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }.absolute{position:absolute}.relative{position:relative}.-left-1{left:-0.25rem}.-left-10{left:-2.5rem}.top-4{top:1rem}.z-\[1\]{z-index:1}.col-span-2{grid-column:span 2 / span 2}.m-4{margin:1rem}.mx-3{margin-left:0.75rem;margin-right:0.75rem}.mx-4{margin-left:1rem;margin-right:1rem}.mx-6{margin-left:1.5rem;margin-right:1.5rem}.mx-7{margin-left:1.75rem;margin-right:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.my-3{margin-top:0.75rem;margin-bottom:0.75rem}.mb-12{margin-bottom:3rem}.mb-2{margin-bottom:0.5rem}.mb-5{margin-bottom:1.25rem}.mb-9{margin-bottom:2.25rem}.ml-28{margin-left:7rem}.ml-7{margin-left:1.75rem}.mt-1\.5{margin-top:0.375rem}.mt-6{margin-top:1.5rem}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.size-12{width:3rem;height:3rem}.size-4{width:1rem;height:1rem}.size-5{width:1.25rem;height:1.25rem}.size-6{width:1.5rem;height:1.5rem}.h-56{height:14rem}.h-60{height:15rem}.h-full{height:100%}.w-10\/12{width:83.333333%}.w-3\/4{width:75%}.w-full{width:100%}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-x-3\.5{column-gap:0.875rem}.gap-x-9{column-gap:2.25rem}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-\[2rem\]{border-radius:2rem}.rounded-\[64px\]{border-radius:64px}.rounded-full{border-radius:9999px}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-none{border-style:none}.border-gray-400{--tw-border-opacity:1;border-color:rgb(156 163 175 / var(--tw-border-opacity))}.bg-\[\#1C1C1C\]{--tw-bg-opacity:1;background-color:rgb(28 28 28 / var(--tw-bg-opacity))}.bg-\[\#77AAEA\]{--tw-bg-opacity:1;background-color:rgb(119 170 234 / var(--tw-bg-opacity))}.bg-\[\#A4DAC3\]{--tw-bg-opacity:1;background-color:rgb(164 218 195 / var(--tw-bg-opacity))}.bg-\[\#ABEF5F33\]{background-color:#ABEF5F33}.bg-\[\#ABEF5F\]{--tw-bg-opacity:1;background-color:rgb(171 239 95 / var(--tw-bg-opacity))}.bg-\[\#E7C1D3\]{--tw-bg-opacity:1;background-color:rgb(231 193 211 / var(--tw-bg-opacity))}.bg-\[\#EFDA6E\]{--tw-bg-opacity:1;background-color:rgb(239 218 110 / var(--tw-bg-opacity))}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity))}.bg-stone-100{--tw-bg-opacity:1;background-color:rgb(245 245 244 / var(--tw-bg-opacity))}.bg-stone-50{--tw-bg-opacity:1;background-color:rgb(250 250 249 / var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.bg-opacity-50{--tw-bg-opacity:0.5}.bg-\[url\(\'\.\/assets\/bg\.jpg\'\)\]{background-image:url('./assets/bg.jpg')}.bg-cover{background-size:cover}.object-cover{object-fit:cover}.p-0{padding:0px}.p-1\.5{padding:0.375rem}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-6{padding:1.5rem}.p-7{padding:1.75rem}.px-16{padding-left:4rem;padding-right:4rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-20{padding-left:5rem;padding-right:5rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pb-16{padding-bottom:4rem}.pb-2{padding-bottom:0.5rem}.pb-4{padding-bottom:1rem}.pb-5{padding-bottom:1.25rem}.pb-6{padding-bottom:1.5rem}.pb-8{padding-bottom:2rem}.pt-10{padding-top:2.5rem}.pt-16{padding-top:4rem}.pt-4{padding-top:1rem}.pt-5{padding-top:1.25rem}.pt-6{padding-top:1.5rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-6xl{font-size:3.75rem;line-height:1}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.text-\[\#494949\]{--tw-text-opacity:1;color:rgb(73 73 73 / var(--tw-text-opacity))}.text-\[\#737373\]{--tw-text-opacity:1;color:rgb(115 115 115 / var(--tw-text-opacity))}.text-\[\#A0A0A0\]{--tw-text-opacity:1;color:rgb(160 160 160 / var(--tw-text-opacity))}.text-\[\#E9E9E9\]{--tw-text-opacity:1;color:rgb(233 233 233 / var(--tw-text-opacity))}.text-blue-500{--tw-text-opacity:1;color:rgb(59 130 246 / var(--tw-text-opacity))}.text-orange-400{--tw-text-opacity:1;color:rgb(251 146 60 / var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-none{--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:text-stone-400:hover{--tw-text-opacity:1;color:rgb(168 162 158 / var(--tw-text-opacity))}@media (min-width: 1024px){.lg\:col-span-2{grid-column:span 2 / span 2}.lg\:m-2{margin:0.5rem}.lg\:mx-0{margin-left:0px;margin-right:0px}.lg\:mx-10{margin-left:2.5rem;margin-right:2.5rem}.lg\:mx-11{margin-left:2.75rem;margin-right:2.75rem}.lg\:mx-auto{margin-left:auto;margin-right:auto}.lg\:mb-24{margin-bottom:6rem}.lg\:mb-28{margin-bottom:7rem}.lg\:mb-8{margin-bottom:2rem}.lg\:mr-0{margin-right:0px}.lg\:mt-0{margin-top:0px}.lg\:mt-6{margin-top:1.5rem}.lg\:block{display:block}.lg\:inline-flex{display:inline-flex}.lg\:inline-grid{display:inline-grid}.lg\:contents{display:contents}.lg\:hidden{display:none}.lg\:h-full{height:100%}.lg\:w-11\/12{width:91.666667%}.lg\:w-3\/4{width:75%}.lg\:w-full{width:100%}.lg\:max-w-5xl{max-width:64rem}.lg\:max-w-screen-xl{max-width:1280px}.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:flex-row{flex-direction:row}.lg\:justify-between{justify-content:space-between}.lg\:gap-6{gap:1.5rem}.lg\:gap-x-28{column-gap:7rem}.lg\:border-b{border-bottom-width:1px}.lg\:bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.lg\:object-fill{object-fit:fill}.lg\:p-10{padding:2.5rem}.lg\:p-12{padding:3rem}.lg\:p-6{padding:1.5rem}.lg\:px-10{padding-left:2.5rem;padding-right:2.5rem}.lg\:px-4{padding-left:1rem;padding-right:1rem}.lg\:px-5{padding-left:1.25rem;padding-right:1.25rem}.lg\:py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.lg\:py-24{padding-top:6rem;padding-bottom:6rem}.lg\:pb-0{padding-bottom:0px}.lg\:pb-12{padding-bottom:3rem}.lg\:pb-24{padding-bottom:6rem}.lg\:pt-0{padding-top:0px}.lg\:pt-24{padding-top:6rem}.lg\:pt-8{padding-top:2rem}.lg\:text-left{text-align:left}.lg\:text-4xl{font-size:2.25rem;line-height:2.5rem}.lg\:text-5xl{font-size:3rem;line-height:1}.lg\:text-base{font-size:1rem;line-height:1.5rem}.lg\:text-lg{font-size:1.125rem;line-height:1.75rem}.lg\:text-xl{font-size:1.25rem;line-height:1.75rem}.lg\:font-extrabold{font-weight:800}}</style></head>
+<body class="font-basic">
+    <!-- header -->
+<header class="bg-stone-50 ">
+        <!-- navbar -->
+    <nav class="lg:max-w-screen-xl mx-auto py-8 px-4 lg:p-12">
+        <div class="flex justify-between items-center">
+            <div class="inline-flex gap-1.5 items-center">
+                <p class="bg-[#ABEF5F] p-1.5 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" class="size-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
+                    </svg>
+                </p>                  
+                <h1 class="text-3xl font-extrabold">Rinterio</h1>
+            </div>
+            <div class="lg:inline-flex hidden gap-x-9">
+                <p id="a" class="text-base font-bold">Home</p>
+                <p class="text-base text-[#737373]">Services</p>
+                <p class="text-base text-[#737373]">Portfolio</p>
+                <p class="text-base text-[#737373]">Blogs</p>
+                <p class="text-base text-[#737373]">Contact Us</p>
+            </div>
+            <div class="hidden lg:inline-flex items-center gap-x-3.5">
+                <p class="bg-white p-2 rounded-full shadow-md"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" class="size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"></path>
+                  </svg>
+                  </p>
+                <p class="bg-white p-2 rounded-full shadow-md"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" class="size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"></path>
+                  </svg>
+                  </p>
+                <button class="btn rounded-3xl px-5 py-2.5 bg-[#ABEF5F] font-extrabold text-lg">
+                    Book Consult
+                    <p class="bg-black p-1.5 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" class="size-4 text-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
+                        </svg>
+                    </p>
+                </button>
+            </div>
+            <div class="lg:hidden ml-28">
+                <details class="dropdown">
+                    <summary class="btn bg-stone-50 shadow-none border-none">
+                        <div class="bg-white rounded-full p-3 shadow-md ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                              </svg>                  
+                        </div>
+                    </summary>
+                    <ul class="menu dropdown-content bg-white rounded-box z-[1] -left-10 p-2 shadow">
+                        <li>
+                            <a href="index.html" class="text-base font-bold">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-base text-[#737373]">Services</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-base text-[#737373]">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-base text-[#737373]">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-base text-[#737373]">Contact</a>
+                        </li>
+                    </ul>
+                  </details>
+            </div>
+        </div>
+    </nav>
+        <!-- banner -->
+    <div class="lg:max-w-screen-xl mx-auto">
+            <div class="flex justify-center ">
+                <div class="pb-6">
+                    <img class="lg:w-full w-3/4 mx-auto" src="assets/banner.png" alt="">
+                </div>
+            </div>
+            <div class="text-center">
+                <h1 class="text-6xl font-extrabold pb-6 hidden lg:contents">A barn house of this design has a <br> striking appearance</h1>
+                <h1 class="text-2xl font-extrabold pb-6 lg:hidden">A barn house of this <br> design has a  striking appearance</h1>
+                <p class="text-[#494949] font-medium text-base pb-8 pt-6 px-2">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.
+                </p>
+                <button class="btn gap-3 px-20 lg:px-4 bg-[#ABEF5F] bg-opacity-50 rounded-[2rem] lg:mb-28 mb-12">
+                    <h3 class="text-xl font-bold ">View Details</h3>
+                    <div class="bg-[#ABEF5F] rounded-full p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
+                          </svg> 
+                    </div>
+                </button>
+            </div>
+    </div>
+</header>
+<main>
+    <!-- hero-part-1 -->
+    <section class="bg-stone-100">
+    <div class="lg:max-w-screen-xl mx-auto relative">
+        <div class="absolute py-5 border-gray-400 top-4 -left-1 hidden lg:block">
+            <img src="assets/Vector.png" alt="">
+        </div>
+        <div class="flex lg:flex-row flex-col lg:justify-between lg:py-24 py-8 text-center lg:mx-11 lg:text-left">
+            <div class="">
+                <button class="inline-flex gap-1.5 rounded-3xl bg-white py-2 px-4 font-bold text-base shadow-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
+                      </svg>                  
+                    <p>About Us</p>
+                </button>
+                <h1 class="lg:text-4xl text-2xl lg:font-extrabold font-black pt-4 pb-6">
+                    We design thoughtful, <br> liveable spaces
+                </h1>
+                <p class="lg:text-base text-sm font-medium text-[#494949] pb-5 lg:mx-0 mx-6">
+                    The barn house captivates with its blend of rustic charm and <br> modern sophistication, featuring weathered wood, sleek metal accents.
+                </p>
+                <div class="flex lg:flex-row items-center bg-white rounded-2xl p-6 gap-3 mb-5 shadow-sm lg:mx-0 mx-6 ">
+                    <div>
+                        <img src="assets/commercial.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="pb-2 font-extrabold lg:text-xl text-lg">Commercial</h1>
+                        <p class="font-medium lg:text-base text-sm text-[#737373]">The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                    </div>
+                </div>
+                <div class="flex lg:flex-row items-center bg-white rounded-2xl p-6 mx-6 lg:mx-0 gap-3 shadow-sm">
+                    <div>
+                        <img src="assets/residential.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="pb-2 font-extrabold lg:text-xl text-lg">Residential</h1>
+                        <p class="font-medium lg:text-base text-sm text-[#737373]">The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="h-56 lg:h-full">
+              <img class="w-10/12 lg:w-11/12 object-cover lg:object-fill mx-auto lg:mr-0 h-full rounded-2xl border lg:mt-0 mt-6 " src="assets/Rectangle.png" alt="">
+            </div>
+        </div>
+        <div class="text-center pt-8 lg:pt-0">
+            <button class="inline-flex gap-1.5 rounded-3xl bg-white py-2 px-4 font-bold text-base shadow-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
+                  </svg>                  
+                <p>How we works</p>
+            </button>
+            <h1 class="lg:text-4xl text-2xl font-black pt-4 pb-6">
+                Our Works Process
+            </h1>
+            <p class="lg:text-base text-sm font-medium text-[#494949] pb-8 lg:mx-0 mx-6">
+                The barn house captivates with its blend of rustic charm and modern sophistication, <br>featuring weathered wood, sleek metal accents.
+            </p>
+        </div>
+        <div class="grid lg:grid-cols-4 items-center gap-6 lg:mx-10 mx-7 lg:pb-24 pb-8">
+            <div class="bg-[#E7C1D3] rounded-2xl p-6">
+                <img src="assets/concept.png" alt="">
+                <h3 class="text-xl font-extrabold py-3">Concept</h3>
+                <p class="text-base font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+            </div>
+            <div class=" bg-[#EFDA6E] rounded-2xl p-6">
+                <img src="assets/flow-chart.png" alt="">
+                <h3 class="text-xl font-extrabold py-3">Design Process</h3>
+                <p class="text-base font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+            </div>
+            <div class=" bg-[#A4DAC3] rounded-2xl p-6">
+                <img src="assets/vision.png" alt="">
+                <h3 class="text-xl font-extrabold py-3">Supervision</h3>
+                <p class="text-base font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+            </div>
+            <div class=" bg-[#77AAEA] rounded-2xl p-6">
+                <img src="assets/budget-planning.png" alt="">
+                <h3 class="text-xl font-extrabold py-3">Budget Planning</h3>
+                <p class="text-base font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+            </div>
+        </div>
+    </div>
+     </section>
+    <!-- hero part-2 -->
+<section class="bg-stone-100 lg:border-b">
+    <div class="lg:bg-white lg:pb-24">
+    <div class="lg:max-w-screen-xl lg:pt-24 lg:mx-auto">
+        <div class="text-center lg:pt-8 pt-5 lg:pt-0">
+                <button class="inline-flex gap-1.5 rounded-3xl bg-[#ABEF5F33] py-2 px-4 font-bold text-base shadow-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
+                      </svg>                  
+                    <p>Explore our Latest works</p>
+                </button>
+                <h1 class="lg:text-4xl text-2xl font-black pt-4 pb-6">
+                    Our Latest Portfolio
+                </h1>
+                <p class="lg:text-base text-sm font-medium text-[#494949] pb-8 lg:mx-0 mx-6">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, <br>featuring weathered wood, sleek metal accents.
+                </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:mx-11">
+            <div class="lg:mx-0 mx-7 shadow-sm bg-white rounded-2xl lg:p-6 p-7 border col-span-2 flex lg:flex-row flex-col gap-6">
+                <div class="lg:w-3/4 w-full">
+                    <img class="border rounded-2xl" src="assets/img1.png" alt="">
+                </div>
+                <div>
+                    <h1 class="text-2xl font-extrabold pb-4">Commercial</h1>
+                    <p class="text-base font-medium pb-4">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
+                    <button class="btn bg-white border-none shadow-none p-0 gap-3">
+                        <h3 class="text-xl font-bold ">View Details</h3>
+                        <div class="bg-[#ABEF5F] rounded-full p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
+                              </svg> 
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="lg:mx-0 ml-7 p-7 shadow-sm border bg-white rounded-2xl lg:p-6 h-60 lg:h-full">
+                <img src="assets/img2.png" class="h-full border rounded-2xl " alt="">
+            </div>
+        </div>
+        <div class="hidden lg:inline-grid lg:grid-cols-4 gap-6 lg:mx-11 lg:mt-6">
+            <div class="shadow-sm border rounded-xl  p-6">
+                <img class="rounded-2xl border" src="assets/img3.png" alt="">
+            </div>
+            <div class="shadow-sm border rounded-xl col-span-2 p-6 flex lg:flex-row gap-6">
+                <div class="w-full">
+                    <img class="rounded-2xl border" src="assets/img4.png" alt="">
+                </div>
+                <div>
+                    <h1 class="text-2xl font-extrabold pb-4">Commercial</h1>
+                    <p class="text-base font-medium pb-4">The barn house captivates with its blend of rustic charm and modern.</p>
+                    <button class="btn bg-white border-none shadow-none p-0 gap-3">
+                        <h3 class="text-xl font-bold ">View Details</h3>
+                        <div class="bg-[#ABEF5F] rounded-full p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
+                              </svg> 
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="shadow-sm border rounded-xl  p-6">
+                <img class="rounded-2xl border" src="assets/img5.png" alt="">
+            </div>
+        </div>
+        <div class=" lg:hidden space-y-6 mt-6 pb-6">
+            <div class="shadow-sm bg-white border h-60 rounded-xl  p-7 mx-7">
+                <img class="rounded-2xl border h-full w-full" src="assets/img5.png" alt="">
+            </div>
+            <div class="shadow-sm bg-white border rounded-xl p-7 mx-7 space-y-6">
+                <div class="w-full">
+                    <img class="rounded-2xl border" src="assets/img4.png" alt="">
+                </div>
+                <div>
+                    <h1 class="text-2xl font-extrabold pb-4">Commercial</h1>
+                    <p class="text-base font-medium pb-4">The barn house captivates with its blend of rustic charm and modern.</p>
+                    <button class="btn bg-white border-none shadow-none p-0 gap-3">
+                        <h3 class="text-xl font-bold ">View Details</h3>
+                        <div class="bg-[#ABEF5F] rounded-full p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
+                              </svg> 
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="shadow-sm bg-white border rounded-xl  p-7 mx-7 h-60 ">
+                <img class="rounded-2xl border h-full w-full" src="assets/img3.png" alt="">
+            </div>
+            <div class="shadow-sm bg-white border h-60 rounded-xl  p-7 mx-7">
+                <img class="rounded-2xl border h-full w-full" src="assets/img5.png" alt="">
+            </div>
+        </div>
+        </div>
+        </div>
+</section>   
+    <!-- Next projects part -->
+      <section class="bg-[url('./assets/bg.jpg')] lg:m-2 mb-2 mt-1.5 bg-cover ">
+            <div class="mx-auto">
+                <div class="lg:pt-24 pt-10 flex justify-center">
+                    <button class="border rounded-3xl bg-[#ABEF5F33] py-2 px-4 text-base font-semibold inline-flex gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
+                          </svg>              
+                        Let’s Connect
+                    </button>
+                </div>
+                <div class="text-center">
+                    <h1 class="text-4xl font-extrabold pt-4 pb-5">
+                        Let’s Discuss Next Project
+                    </h1>
+                    <p class="text-base mx-3 pb-6 font-medium text-[#494949]">
+                        The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.
+                    </p>
+                </div>
+            </div>
+                <form action="">
+                    <div class="lg:max-w-5xl lg:mx-auto mx-7 grid lg:grid-cols-2 gap-6">
+                    <input class="py-5 px-6 rounded-[64px] text-[#A0A0A0] font-medium text-base" placeholder="First Name*" type="text">
+                    <input class="py-5 px-6 rounded-[64px] text-[#A0A0A0] font-medium text-base" placeholder="Last Name*" type="text">
+                    <input class="py-5 px-6 rounded-[64px] text-[#A0A0A0] font-medium text-base" placeholder="Phone Number*" type="number">
+                    <input class="py-5 px-6 rounded-[64px] text-[#A0A0A0] font-medium text-base" placeholder="Email Number*" type="email">
+                    <textarea class="lg:mb-8 lg:col-span-2 py-5 px-6 rounded-3xl text-[#A0A0A0] font-medium text-base" placeholder="Write your message here" name="" id="" cols="30" rows="10"></textarea>
+                    <button class="btn rounded-3xl lg:px-5 lg:py-2.5 bg-[#ABEF5F] font-extrabold lg:text-lg text-2xl lg:col-span-2 lg:mb-24 mb-9">
+                        Send Mail
+                        <p class="bg-black p-1.5 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.4" stroke="currentColor" class="size-4 text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
+                            </svg>
+                        </p>
+                    </button>
+                </div>
+                </form>
+      </section>
+    <!-- unique part -->
+</main>
+    <!-- footer -->
+ <footer class="bg-[#1C1C1C]">
+    <div class="lg:max-w-screen-xl mx-auto text-center">
+        <div class="inline-flex gap-1.5 items-center lg:pt-24 pt-16 px-auto">
+            <p class="bg-[#ABEF5F] p-1.5 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" class="size-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
+                </svg>
+            </p>                  
+            <h1 class="text-3xl font-extrabold text-white">Rinterio</h1>
+        </div>
+        <div class="pt-4 lg:pb-12 pb-8">
+            <p class="text-[#737373] text-base font-medium px-2.5">
+                The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.
+            </p>
+        </div>
+        <div class="lg:inline-flex lg:pb-12 lg:gap-x-28 px-auto">
+            <p class="text-base font-bold text-[#E9E9E9] pb-8 lg:pb-0">Home</p>
+            <p class="text-base text-[#E9E9E9] pb-8 lg:pb-0">Services</p>
+            <p class="text-base text-[#E9E9E9] pb-8 lg:pb-0">Portfolio</p>
+            <p class="text-base text-[#E9E9E9] pb-8 lg:pb-0">Blogs</p>
+            <p class="text-base text-[#E9E9E9] pb-8 lg:pb-0">Contact Us</p>
+        </div>
+        <div class="lg:pb-24 pb-16 px-auto">
+            <button class="btn rounded-3xl lg:px-5 px-16 py-2.5 bg-[#ABEF5F] font-extrabold text-lg">
+                Book Consult
+                <p class="bg-black p-1.5 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" class="size-4 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
+                    </svg>
+                </p>
+            </button>
+        </div>
+    </div>
+ </footer>
 </body>
-</html>
+    </html>
